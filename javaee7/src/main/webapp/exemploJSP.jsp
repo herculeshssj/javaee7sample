@@ -37,5 +37,7 @@ Entre com seu nome:
 
 </form>
 
+<a href="${pageContext.request.contextPath}/faces/index.jsf">Exemplo de JSF</a>
+
 </body>
 </html>

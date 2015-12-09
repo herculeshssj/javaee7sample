@@ -19,6 +19,16 @@
     	<artifactId>javax.servlet-api</artifactId>
     	<version>3.1.0</version>
     </dependency>
+    <dependency>
+		<groupId>com.sun.faces</groupId>
+		<artifactId>jsf-api</artifactId>
+		<version>2.2.12</version>
+	</dependency>    
+    <dependency>
+		<groupId>com.sun.faces</groupId>
+		<artifactId>jsf-impl</artifactId>
+		<version>2.2.12</version>
+	</dependency>    
   </dependencies>
   <build>
     <finalName>javaee7</finalName>
