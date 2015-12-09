@@ -38,6 +38,8 @@ Entre com seu nome:
 </form>
 
 <a href="${pageContext.request.contextPath}/faces/index.jsf">Exemplo de JSF</a>
+<br/><br/>
+<a href="${pageContext.request.contextPath}/faces/indexCDI.jsf">Exemplo de JSF com CDI</a>
 
 </body>
 </html>
