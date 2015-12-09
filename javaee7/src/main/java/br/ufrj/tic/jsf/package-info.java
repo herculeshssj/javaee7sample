@@ -5,4 +5,4 @@
  * @author herculeshssj
  *
  */
-package jsf;
+package br.ufrj.tic.jsf;

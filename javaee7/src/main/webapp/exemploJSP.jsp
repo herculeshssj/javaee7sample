@@ -1,4 +1,4 @@
-<jsp:useBean id="teste" class="servletjsp.ExemploJSP" scope="page"/>
+<jsp:useBean id="teste" class="br.ufrj.tic.servletjsp.ExemploJSP" scope="page"/>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -14,5 +14,28 @@
 	out.println(teste.mensagem());
 	
 %>
+
+<br/><br/>
+
+<form action="${pageContext.request.contextPath}/ExemploServlet" method="get">
+
+Entre com seu nome:
+<input type="text" id="nomeGET" name="nomeGET"/>
+
+<input type="submit" value="Enviar via GET">
+
+</form>
+
+<br/><br/>
+
+<form action="${pageContext.request.contextPath}/ExemploServlet" method="post">
+
+Entre com seu nome:
+<input type="text" id="nomePOST" name="nomePOST"/>
+
+<input type="submit" value="Enviar via POST">
+
+</form>
+
 </body>
 </html>

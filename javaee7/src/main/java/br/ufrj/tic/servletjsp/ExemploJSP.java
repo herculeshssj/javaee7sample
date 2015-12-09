@@ -1,4 +1,4 @@
-package servletjsp;
+package br.ufrj.tic.servletjsp;
 
 public class ExemploJSP {
 	
