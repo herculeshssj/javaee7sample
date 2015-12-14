@@ -27,7 +27,11 @@ public class PessoaEJB {
 	}
 	
 	public void editarPessoa(Pessoa pessoa) {
-		pessoaDB.set(pessoa.getId(), pessoa);
+		try {
+			pessoaDB.set(pessoa.getId(), pessoa);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void removerPessoa(int id) {

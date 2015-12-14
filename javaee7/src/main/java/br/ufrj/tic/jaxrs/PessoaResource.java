@@ -15,11 +15,16 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import br.ufrj.tic.jpa.PessoaDAO;
+
 @Path("pessoa")
 public class PessoaResource {
 	
 	@Inject
 	private PessoaEJB pessoaEJB;
+	
+	@Inject
+	private PessoaDAO pessoaDAO;
 	
 	@GET
 	@Path("teste")
@@ -37,7 +42,8 @@ public class PessoaResource {
 	@GET
 	@Produces("application/json")
 	public List<Pessoa> findAll() {
-		return pessoaEJB.listarPessoas(); 
+		//return pessoaEJB.listarPessoas();
+		return pessoaDAO.get();
 	}
 
 	@GET
@@ -58,11 +64,7 @@ public class PessoaResource {
 	@PUT
 	@Consumes("application/json")
 	public Response update(Pessoa pessoa) {
-		try {
-			pessoaEJB.editarPessoa(pessoa);
-		} catch (Exception e) {
-			return Response.notModified().build();
-		}
+		pessoaEJB.editarPessoa(pessoa);
 		return Response.ok().build();
 	}
 	

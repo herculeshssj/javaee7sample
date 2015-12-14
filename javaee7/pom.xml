@@ -38,7 +38,57 @@
 	 	<groupId>javax</groupId>
 		<artifactId>javaee-api</artifactId>
 		<version>7.0</version>
-	</dependency>    
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.37</version>
+	</dependency> 
+	<dependency>
+        <groupId>antlr</groupId>
+        <artifactId>antlr</artifactId>
+        <version>2.7.7</version>
+    </dependency>       
+    <dependency>
+        <groupId>dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>1.6.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate.common</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>4.0.5.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.2.21.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-ehcache</artifactId>
+        <version>4.2.21.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>4.2.21.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>4.3.2.Final</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.jboss.logging</groupId>
+    	<artifactId>jboss-logging</artifactId>
+    	<version>3.3.0.Final</version>
+	</dependency>
+    <dependency>
+    	<groupId>org.javassist</groupId>
+    	<artifactId>javassist</artifactId>
+    	<version>3.18.1-GA</version>
+	</dependency>	    
   </dependencies>
   <build>
     <finalName>javaee7</finalName>
