@@ -20,8 +20,8 @@ import br.ufrj.tic.jpa.PessoaDAO;
 @Path("pessoa")
 public class PessoaResource {
 	
-	@Inject
-	private PessoaEJB pessoaEJB;
+	//@Inject
+	//private PessoaEJB pessoaEJB;
 	
 	@Inject
 	private PessoaDAO pessoaDAO;
@@ -50,27 +50,32 @@ public class PessoaResource {
 	@Path("{id}")
 	@Produces("application/json")
 	public Pessoa findByID(@PathParam("id") int id) {
-		return pessoaEJB.buscarPessoa(id);
+		//return pessoaEJB.buscarPessoa(id);
+		return pessoaDAO.getPessoa(id);
 	}
 	
 	@POST
 	@Consumes("application/json")
 	public Response save(Pessoa pessoa) {
-		pessoa.setId(pessoaEJB.getNextID());
-		pessoaEJB.salvarPessoa(pessoa);
+		//pessoa.setId(pessoaEJB.getNextID());
+		//pessoaEJB.salvarPessoa(pessoa);
+		pessoaDAO.save(pessoa);
 		return Response.ok().build();
 	}
 	
 	@PUT
 	@Consumes("application/json")
 	public Response update(Pessoa pessoa) {
-		pessoaEJB.editarPessoa(pessoa);
+		//pessoaEJB.editarPessoa(pessoa);
+		pessoaDAO.update(pessoa);
 		return Response.ok().build();
 	}
 	
 	@DELETE
 	@Path("{id}")
-	public void remove(@PathParam("id") int id) {
-		pessoaEJB.removerPessoa(id);
+	public Response remove(@PathParam("id") int id) {
+		//pessoaEJB.removerPessoa(id);
+		pessoaDAO.remove(id);
+		return Response.ok().build();
 	}
 }

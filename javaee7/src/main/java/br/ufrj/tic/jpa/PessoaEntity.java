@@ -36,7 +36,7 @@ public class PessoaEntity {
 	}
 	
 	public PessoaEntity(Pessoa pessoa) {
-		this.id = pessoa.getId();
+		//this.id = pessoa.getId();
 		this.nome = pessoa.getNome();
 		this.idade = pessoa.getIdade();
 		this.dataNascimento = pessoa.getDataNascimento();
@@ -49,6 +49,12 @@ public class PessoaEntity {
 		pessoa.setIdade(this.getIdade());
 		pessoa.setDataNascimento(this.getDataNascimento());
 		return pessoa;
+	}
+	
+	public void setPessoa(Pessoa pessoa) {
+		this.nome = pessoa.getNome();
+		this.idade = pessoa.getIdade();
+		this.dataNascimento = pessoa.getDataNascimento();
 	}
 	
 	@Override

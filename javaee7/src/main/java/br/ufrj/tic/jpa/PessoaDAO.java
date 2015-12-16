@@ -19,6 +19,17 @@ public class PessoaDAO {
 		em.persist(new PessoaEntity(pessoa));
 	}
 	
+	public void update(Pessoa pessoa) {
+		PessoaEntity pessoaEntity = em.find(PessoaEntity.class, pessoa.getId());
+		pessoaEntity.setPessoa(pessoa);
+		em.merge(pessoaEntity);
+	}
+	
+	public void remove(Integer id) {
+		PessoaEntity pessoaEntity = em.find(PessoaEntity.class, id);
+		em.remove(pessoaEntity);
+	}
+	
 	@SuppressWarnings("unchecked")
 	public List<Pessoa> get() {
 		List<PessoaEntity> pessoasEntity = em.createQuery("SELECT p FROM PessoaEntity p").getResultList();
@@ -29,5 +40,10 @@ public class PessoaDAO {
 		}
 		
 		return pessoas;
+	}
+	
+	public Pessoa getPessoa(Integer id) {
+		PessoaEntity pessoaEntity = em.find(PessoaEntity.class, id);
+		return pessoaEntity.getPessoa();
 	}
 }
