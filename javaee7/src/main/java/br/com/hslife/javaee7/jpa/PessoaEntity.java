@@ -1,4 +1,4 @@
-package br.ufrj.tic.jpa;
+package br.com.hslife.javaee7.jpa;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import br.ufrj.tic.jaxrs.Pessoa;
+import br.com.hslife.javaee7.jaxrs.Pessoa;
 
 @Entity
 @Table(name="pessoa")

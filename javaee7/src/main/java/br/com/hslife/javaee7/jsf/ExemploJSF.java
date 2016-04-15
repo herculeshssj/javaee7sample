@@ -1,4 +1,4 @@
-package br.ufrj.tic.jsf;
+package br.com.hslife.javaee7.jsf;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;

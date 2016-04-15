@@ -1,10 +1,10 @@
-package br.ufrj.tic.testcase;
+package br.com.hslife.javaee7.testcase;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import br.ufrj.tic.servletjsp.ExemploJSP;
+import br.com.hslife.javaee7.servletjsp.ExemploJSP;
 
 public class ExemploJSPTest {
 	

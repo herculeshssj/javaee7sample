@@ -1,10 +1,10 @@
-package br.ufrj.tic.jsf;
+package br.com.hslife.javaee7.jsf;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import br.ufrj.tic.ejb.ExemploEJB;
+import br.com.hslife.javaee7.ejb.ExemploEJB;
 
 @Named
 @RequestScoped

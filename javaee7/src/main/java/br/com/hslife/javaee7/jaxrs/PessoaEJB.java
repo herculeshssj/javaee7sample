@@ -1,4 +1,4 @@
-package br.ufrj.tic.jaxrs;
+package br.com.hslife.javaee7.jaxrs;
 
 import java.util.ArrayList;
 import java.util.Date;

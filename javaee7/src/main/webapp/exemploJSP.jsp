@@ -1,4 +1,4 @@
-<jsp:useBean id="teste" class="br.ufrj.tic.servletjsp.ExemploJSP" scope="page"/>
+<jsp:useBean id="teste" class="br.com.hslife.javaee7.servletjsp.ExemploJSP" scope="page"/>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

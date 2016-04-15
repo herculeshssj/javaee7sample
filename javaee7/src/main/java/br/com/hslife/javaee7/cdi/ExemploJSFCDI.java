@@ -1,4 +1,4 @@
-package br.ufrj.tic.cdi;
+package br.com.hslife.javaee7.cdi;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;

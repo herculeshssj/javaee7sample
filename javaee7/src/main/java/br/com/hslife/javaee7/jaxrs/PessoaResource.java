@@ -1,4 +1,4 @@
-package br.ufrj.tic.jaxrs;
+package br.com.hslife.javaee7.jaxrs;
 
 import java.util.Date;
 import java.util.List;
@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import br.ufrj.tic.jpa.PessoaDAO;
+import br.com.hslife.javaee7.jpa.PessoaDAO;
 
 @Path("pessoa")
 public class PessoaResource {

@@ -1,4 +1,4 @@
-package br.ufrj.tic.ejb;
+package br.com.hslife.javaee7.ejb;
 
 import javax.ejb.Stateless;
 

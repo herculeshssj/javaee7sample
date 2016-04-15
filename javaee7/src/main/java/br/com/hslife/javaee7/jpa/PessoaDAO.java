@@ -1,4 +1,4 @@
-package br.ufrj.tic.jpa;
+package br.com.hslife.javaee7.jpa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.ufrj.tic.jaxrs.Pessoa;
+import br.com.hslife.javaee7.jaxrs.Pessoa;
 
 @Stateless
 public class PessoaDAO {
