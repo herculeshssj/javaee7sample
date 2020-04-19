@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  titulo: string;
+
   title = 'hero-pokemon-angular';
+
+  constructor() {
+    this.titulo = "Hero Pokémon - Angular"
+  }
 }

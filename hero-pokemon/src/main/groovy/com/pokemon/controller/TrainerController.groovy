@@ -6,6 +6,7 @@ import com.pokemon.service.TrainerService
 import com.pokemon.service.WildPokemonService
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.PathVariable
@@ -23,6 +24,11 @@ class TrainerController {
   @RequestMapping(method = RequestMethod.GET)
   List<Trainer> findAll() {
     trainerService.findAll()
+  }
+
+  @RequestMapping(method = RequestMethod.POST)
+  void addTrainer(@RequestBody Trainer trainer) {
+    trainerService.saveTrainer(trainer)
   }
 
   @RequestMapping(value = '/{id}/pokemon', method = RequestMethod.GET)
