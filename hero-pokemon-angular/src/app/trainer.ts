@@ -1,5 +1,5 @@
 export class Trainer {
-    id: string;
+    id: number;
     name: string;
     level: string;
 }
