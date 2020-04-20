@@ -11,7 +11,7 @@ export class TrainerService {
   private trainersUrl: string;
 
   constructor(private http: HttpClient) {
-    this.trainersUrl = 'http://localhost:8080/trainers';
+    this.trainersUrl = 'http://192.168.56.10:8080/trainers';
   }
 
   public findAll(): Observable<Trainer[]> {
