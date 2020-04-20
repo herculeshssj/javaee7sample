@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Trainer } from '../Trainer';
+import { Trainer } from '../trainer';
 import { TrainerService } from '../trainer-service.service';
 
 @Component({
