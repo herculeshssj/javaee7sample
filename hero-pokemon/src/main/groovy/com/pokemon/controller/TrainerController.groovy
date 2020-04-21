@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable
 
 @RestController
 @RequestMapping('/trainers')
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 class TrainerController {
 
   @Autowired
